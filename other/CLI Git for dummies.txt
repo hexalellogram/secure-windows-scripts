@@ -1,0 +1,32 @@
+**ALL COMMANDS ARE RUN FROM THE LOCATION OF THE GIT REPO**
+
+1) Get latest from the git repo
+	git pull [branch]
+		ex) git pull master
+		ex) git pull Vinay-Testing
+2a) Make sure you are in the branch you want to be in
+	git checkout [branch]
+		ex) git checkout master
+		ex) git checkout Vinay-Testing
+OR
+2b) Create a new branch
+	git checkout -b [branch]
+		ex) git checkout -b Vinay-New-Testing
+2) Run the GUI
+	git gui
+	or
+	git citool
+3) Use the folder as a normal local folder
+4) When changes are made and need to be uploaded
+	1) Open the GUI (see 2)
+	2) Mark modified files to commit
+	3) Write a message and press commit
+	4) git commit origin [branch]
+		ex) git commit origin master
+		ex) git commit origin Vinay-Testing
+5) If 2 branches need to be merged
+	1) move to the branch you want another branch merged to see 2A
+	2) git merge [old branch]
+		ex) If Vinay-Testing is to be merged to master:
+			git checkout master
+			git merge Vinay-Testing

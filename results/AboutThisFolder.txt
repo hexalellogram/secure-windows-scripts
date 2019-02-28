@@ -1,0 +1,3 @@
+The results folder stores the results of script runs, for example showing open ports.
+
+This is for easy reference later.
